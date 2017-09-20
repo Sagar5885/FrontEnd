@@ -1,27 +1,32 @@
 {
-	"name": "loginapp1",
-	"version": "0.2.1",
-	"description": "Simple authentication system",
-	"main": "app.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"author": "Sagar Dodia",
-	"license": "ISC",
-	"dependencies": {
-		"bcryptjs": "*",
-		"body-parser": "*",
-		"connect-flash": "*",
-		"cookie-parser": "^1.4.1",
-		"express": "*",
-		"express-handlebars": "*",
-		"express-messages": "*",
-		"express-session": "*",
-		"express-validator": "*",
-		"mongodb": "*",
-		"mongoose": "*",
-		"passport": "*",
-		"passport-http": "*",
-		"passport-local": "*"
-	}
+  "name": "loginapp1",
+  "version": "0.2.1",
+  "description": "Simple authentication system",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sagar Dodia",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "blueimp-file-upload": "^9.19.1",
+    "body-parser": "*",
+    "cloudinary": "^1.9.0",
+    "cloudinary-jquery-file-upload": "^2.3.0",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "jquery": "^3.2.1",
+    "mongodb": "*",
+    "mongoose": "*",
+    "mustache-express": "^1.2.5",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+  }
 }

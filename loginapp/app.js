@@ -12,6 +12,8 @@ var mongo = require('mongodb');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/loginapp');
 var db = mongoose.connection;
+var mustacheExpress = require('mustache-express');
+var cloudinary = require('cloudinary');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -88,3 +90,10 @@ app.set('port', (process.env.PORT || 3000));
 app.listen(app.get('port'), function(){
 	console.log('Server started on port' + app.get('port'));
 });
+
+//app.use(cloudinary.v2.uploader.image_upload_tag('image_id', { 
+//      resource_type: "video", 
+//      eager: [{streaming_profile:"full_hd", format:"m3u8"}], 
+//      eager_async: true, 
+//      eager_notification_url: "http://mysite/notify_endpoint", html: {id: "my_upload_tag"} 
+//}));
